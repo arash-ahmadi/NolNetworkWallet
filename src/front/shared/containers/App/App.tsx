@@ -493,7 +493,7 @@ class App extends React.Component<RouteComponentProps<any>, any> {
               <main>{children}</main>
             </WidthContainer>
             <Core />
-            <Footer />
+            {/* <Footer /> */}
             <RequestLoader />
             {!dashboardModalsAllowed &&
               <ModalConductor history={history}

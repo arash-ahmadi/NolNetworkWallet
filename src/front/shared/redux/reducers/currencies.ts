@@ -64,7 +64,7 @@ const tokenPartialItems: IUniversalObj[] = []
 EXISTING_STANDARDS.forEach((standard) => {
   const { currency } = TOKEN_STANDARDS[standard]
   const tokenNames = Object.keys(config[standard])
-
+  debugger
   tokenNames.forEach((name) => {
     tokenItems.push({
       name: name.toUpperCase(),
@@ -94,6 +94,13 @@ EXISTING_STANDARDS.forEach((standard) => {
 })
 
 const baseCurrencyConfig = {
+  NOL: {
+    name: 'NOL',
+    title: 'NOL',
+    icon: 'nol',
+    value: 'nol',
+    fullTitle: 'nol coin',
+  },
   ETH: {
     name: 'ETH',
     title: 'ETH',
@@ -309,6 +316,11 @@ const initialState = {
       blockchain: BLOCKCHAIN_TYPE.NEXT,
       addAssets: true,
     }] : [],
+    ...(!buildOpts.curEnabled || buildOpts.curEnabled.nol) ? [{
+      ...baseCurrencyConfig.NOL,
+      blockchain: BLOCKCHAIN_TYPE.MATIC,
+      addAssets: true,
+    }] : [],
     ...(!buildOpts.curEnabled || buildOpts.curEnabled.btc) ? [{
       ...baseCurrencyConfig.BTC,
       blockchain: BLOCKCHAIN_TYPE.BTC,
@@ -395,7 +407,7 @@ if (config.isWidget) {
   // leave only coins
   initialState.partialItems = initialState.partialItems.filter((item) => !item.standard)
 
-  // Мульти валюта с обратной совместимостью одиночного билда
+  // Мульти валюта с обратной совместимостью одиночного билдаaddAssets
   const widgetCustomTokens = window?.widgetEvmLikeTokens?.length ? window.widgetEvmLikeTokens : []
 
   if (widgetCustomTokens.length) {

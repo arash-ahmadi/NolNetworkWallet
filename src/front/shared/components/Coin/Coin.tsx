@@ -24,6 +24,7 @@ const defaultCurrencyColors = {
   'usdt': '#33a681',
   'ghost': 'black',
   'next': 'white',
+  'nol': 'orange',
 }
 
 type CoinProps = {
