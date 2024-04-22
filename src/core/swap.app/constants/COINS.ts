@@ -77,15 +77,15 @@ export const COIN_MODEL = Object.freeze({
 })
 
 export const COIN_DATA = {
-  // NOL: {
-  //   ticker: 'NOL',
-  //   name: 'Nol Coin',
-  //   type: COIN_TYPE.MATIC_TOKEN,
-  //   blockchain: BLOCKCHAIN.MATIC,
-  //   standard: TOKEN_STANDARD.ERC20MATIC,
-  //   model: COIN_MODEL.AB,
-  //   precision: 18,
-  // },
+  NOL: {
+    ticker: 'NOL',
+    name: 'Nol Coin',
+    type: COIN_TYPE.MATIC_TOKEN,
+    blockchain: BLOCKCHAIN.MATIC,
+    standard: TOKEN_STANDARD.ERC20MATIC,
+    model: COIN_MODEL.AB,
+    precision: 18,
+  },
   BTC: {
     ticker: 'BTC',
     name: 'Bitcoin',
