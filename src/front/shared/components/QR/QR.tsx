@@ -44,7 +44,7 @@ export default class QR extends Component<ComponentProps, ComponentState> {
           <div className={styles.imageWrapper}>
             <img
               styleName={`${qrIsLoaded ? '' : 'hiddenEl'}`}
-              src={`https://chart.googleapis.com/chart?chs=${size}x${size}&cht=qr&chl=${address}`}
+              src={`https://qrcode.tec-it.com/API/QRCode?data=${address}`}
               onLoad={this.setSuccessLoading}
               alt={address}
             />

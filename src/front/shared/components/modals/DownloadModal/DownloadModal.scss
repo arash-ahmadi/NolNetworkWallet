@@ -16,6 +16,7 @@
 .buttonsContainer {
   display: flex;
   flex-flow: row wrap;
+  color: black;
 }
 
 @include media-mobile {

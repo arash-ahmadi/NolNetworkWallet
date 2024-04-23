@@ -106,14 +106,14 @@ class DownloadModal extends React.Component<any, any> {
         </div>
         <div styleName="buttonsContainer">
           <Copy text={textToCopy}>
-            <Button styleName="button" brand>
+            <Button styleName="button" gray>
               <FormattedMessage id="recieved67" defaultMessage="Copy to clipboard" />
             </Button>
           </Copy>
           {
             !(/iPad|iPhone|iPod/.test(navigator.userAgent)) && (
               <Fragment>
-                <Button onClick={this.handleDownloadTxt} styleName="button" brand >
+                <Button onClick={this.handleDownloadTxt} styleName="button" gray >
                   <FormattedMessage id="downFile2" defaultMessage="Download txt file" />
                 </Button>
               </Fragment>

@@ -28,6 +28,7 @@
 .actionBtn {
   width: calc(50% - 5px);
   position: relative;
+  color: black;
 }
 
 .fiatDepositRow {
@@ -41,8 +42,10 @@
   align-items: center;
   justify-content: space-around;
   padding-bottom: 10px;
+  color: black;
 
   button {
+    color: black;
     width: 30%;
   }
 
