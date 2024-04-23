@@ -91,7 +91,7 @@
       }
 
       .loader img {
-        width: 80px;
+        width: 200px;
       }
 
       .text {
@@ -563,7 +563,7 @@
       <div id="wrapper_element" class="overlay">
         <div class="center">
           <div id="loader" class="loader">
-            <img id="loaderImg" />
+            <img id="loaderImg" width="400px"/>
           </div>
           <div id="beforeJSTip" class="tips">Loading...</div>
         </div>
@@ -990,7 +990,7 @@
         window.location.hostname === "swaponline.io"
       ) {
         // used by Loader component
-        window.loaderLogoUrl = "https://swaponline.github.io/swap_logo_256.svg";
+        window.loaderLogoUrl = "https://assets-global.website-files.com/66190b70c59dcf89efc9703e/661c066035b5fc4ca3907ce0_nolo-logo-p-500.png";
         document.getElementById("loaderImg").src = window.loaderLogoUrl;
       } else {
         if (window.logoUrl != '#') {

@@ -82,20 +82,20 @@ const Exchange = function (props) {
     <div>
       {!showOnlyOneType && (
         <div styleName="tabsWrapper">
-          <button
+          {/* <button
             type="button"
             styleName={`tab ${swapMode === 'quick' ? 'active' : ''}`}
             onClick={openQuickMode}
           >
             <FormattedMessage id="quickSwap" defaultMessage="Quick swap" />
-          </button>
-          <button
+          </button> */}
+          {/* <button
             type="button"
             styleName={`tab ${swapMode === 'atomic' ? 'active' : ''}`}
             onClick={openAtomicMode}
           >
             <FormattedMessage id="atomicSwap" defaultMessage="Atomic swap" />
-          </button>
+          </button> */}
         </div>
       )}
 

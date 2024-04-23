@@ -34,14 +34,14 @@ const DashboardLayout = (props: ComponentProps) => {
           <div styleName="walletBalance">
             {props.BalanceForm}
 
-            <div
+            {/* <div
               className={cx({
                 [styles.desktopEnabledViewForFaq]: true,
                 [styles.faqWrapper]: true,
               })}
             >
               <FAQ />
-            </div>
+            </div> */}
           </div>
           <div
             styleName={cx({
@@ -52,14 +52,14 @@ const DashboardLayout = (props: ComponentProps) => {
           >
             <ModalConductorProvider>{children}</ModalConductorProvider>
           </div>
-          <div
+          {/* <div
             className={cx({
               [styles.mobileEnabledViewForFaq]: true,
               [styles.faqWrapper]: true,
             })}
           >
             <FAQ />
-          </div>
+          </div> */}
         </div>
       </section>
     </article>

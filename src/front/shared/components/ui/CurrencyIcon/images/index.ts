@@ -33,6 +33,7 @@ import phi_v1 from './phi.png'
 import phi from './phi_v2.png'
 import fkw from './fkw.png'
 import phpx from './phpx.png'
+import nol from './nol.png'
 
 
 
@@ -75,4 +76,5 @@ export default {
   phi,
   fkw,
   phpx,
+  nol,
 }

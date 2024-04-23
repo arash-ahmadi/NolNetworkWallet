@@ -99,6 +99,9 @@ window.widgetERC20Comisions = {
   erc20aurora: {
     address: '0x276747801B0dbb7ba04685BA27102F1B27Ca0815',
   },
+  nol: {
+    address: '0x05D9E439e083C909396cdd4334ECF664AC0455c9'
+  }
 }
 /*
 window.widgetEvmLikeTokens = [
@@ -146,25 +149,9 @@ window.buildOptions = {
   exchangeDisabled: false,
   curEnabled: { // Or 'false' if enabled all
     // inited from window.CUR_<NAME>_DISABLED
-    btc: true,
-    eth: true,
-    bnb: true,
-    matic: true,
-    arbeth: true,
-    aureth: true,
-    xdai: true,
-    ftm: true,
-    avax: true,
-    movr: true,
-    one: true,
-    ame: true,
-    ghost: true,
-    next: false,
-  },
-  blockchainSwapEnabled: {
-    btc: true,
-    eth: true,
-    bnb: true,
+    btc: false,
+    eth: false,
+    bnb: false,
     matic: true,
     arbeth: false,
     aureth: false,
@@ -176,9 +163,27 @@ window.buildOptions = {
     ame: false,
     ghost: false,
     next: false,
+    nol: true,
+  },
+  blockchainSwapEnabled: {
+    btc: false,
+    eth: false,
+    bnb: false,
+    matic: true,
+    arbeth: false,
+    aureth: false,
+    xdai: false,
+    ftm: false,
+    avax: false,
+    movr: false,
+    one: false,
+    ame: false,
+    ghost: false,
+    next: false,
+    nol: true,
   },
   defaultExchangePair: {
-    buy: '{eth}usdt',
-    sell: 'btc',
+    buy: 'nol',
+    sell: 'matic',
   }
 }

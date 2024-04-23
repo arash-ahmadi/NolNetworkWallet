@@ -55,6 +55,7 @@ export default class StepsWrapper extends Component<any, any> {
       })
 
       if (config.opts.addCustomTokens) {
+        if (config.erc20matic && (!curEnabled || curEnabled.nol)) this.defaultStartPack.push({ name: 'Nol', capture: 'Token', baseCurrency: 'NOL' })
         if (config.erc20 && (!curEnabled || curEnabled.eth)) this.defaultStartPack.push({ name: 'ERC20', capture: 'Token', baseCurrency: 'ETH' })
         if (config.bep20 && (!curEnabled || curEnabled.bnb)) this.defaultStartPack.push({ name: 'BEP20', capture: 'Token', baseCurrency: 'BNB' })
         if (config.erc20matic && (!curEnabled || curEnabled.matic)) this.defaultStartPack.push({ name: 'ERC20MATIC', capture: 'Token', baseCurrency: 'MATIC' })

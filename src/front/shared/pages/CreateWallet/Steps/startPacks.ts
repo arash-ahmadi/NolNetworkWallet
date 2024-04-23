@@ -38,32 +38,35 @@ export const defaultPack = [
   ...((!curEnabled || curEnabled.ghost) && !onlyEvmWallets ? [{ name: 'GHOST', capture: 'Ghost' }] : []),
   ...((!curEnabled || curEnabled.next) && !onlyEvmWallets ? [{ name: 'NEXT', capture: 'NEXT.coin' }] : []),
 
-  ...(config.bep20 ? [{ name: 'BTCB', capture: 'BTCB Token', baseCurrency: 'BNB' }] : []),
-  ...(config.erc20
-    ? [
-      { name: 'WBTC', capture: 'Wrapped Bitcoin', baseCurrency: 'ETH' },
-      { name: 'USDT', capture: 'Tether', baseCurrency: 'ETH' },
-      { name: 'EURS', capture: 'Eurs', baseCurrency: 'ETH' },
-    ]
-    : []),
-  ...(config.erc20matic ? [{ name: 'WBTC', capture: 'WBTC Token', baseCurrency: 'MATIC' }] : []),
-  ...(process.env.MAINNET
-    ? [{ name: 'SWAP', capture: 'Swap', baseCurrency: 'ETH' }]
-    : [{ name: 'WEENUS', capture: 'Weenus', baseCurrency: 'ETH' }]),
-  ...(config.erc20 ? [{ name: 'ERC20', capture: 'Token', baseCurrency: 'ETH' }] : []),
-  ...(config.bep20 ? [{ name: 'BEP20', capture: 'Token', baseCurrency: 'BNB' }] : []),
-  ...(config.erc20matic ? [{ name: 'ERC20MATIC', capture: 'Token', baseCurrency: 'MATIC' }] : []),
-  ...(config.erc20xdai ? [{ name: 'ERC20XDAI', capture: 'Token', baseCurrency: 'XDAI' }] : []),
-  ...(config.erc20ftm ? [{ name: 'ERC20FTM', capture: 'Token', baseCurrency: 'FTM' }] : []),
-  ...(config.erc20avax ? [{ name: 'ERC20AVAX', capture: 'Token', baseCurrency: 'AVAX' }] : []),
-  ...(config.erc20movr ? [{ name: 'ERC20MOVR', capture: 'Token', baseCurrency: 'MOVR' }] : []),
-  ...(config.erc20one ? [{ name: 'ERC20ONE', capture: 'Token', baseCurrency: 'ONE' }] : []),
-  ...(config.erc20ame ? [{ name: 'ERC20AME', capture: 'Token', baseCurrency: 'AME' }] : []),
-  ...(config.erc20aurora ? [{ name: 'ERC20AURORA', capture: 'Token', baseCurrency: 'AURETH' }] : []),
-  ...(config.phi20_v1 ? [{ name: 'PHI20_V1', capture: 'Token', baseCurrency: 'PHI_V1' }] : []),
-  ...(config.phi20 ? [{ name: 'PHI20', capture: 'Token', baseCurrency: 'PHI' }] : []),
-  ...(config.fkw20 ? [{ name: 'FKW20', capture: 'Token', baseCurrency: 'FKW' }] : []),
-  ...(config.phpx20 ? [{ name: 'PHPX20', capture: 'Token', baseCurrency: 'PHPX' }] : []),
+  // ...(config.bep20 ? [{ name: 'BTCB', capture: 'BTCB Token', baseCurrency: 'BNB' }] : []),
+  // ...(config.erc20
+  //   ? [
+  //     { name: 'WBTC', capture: 'Wrapped Bitcoin', baseCurrency: 'ETH' },
+  //     { name: 'USDT', capture: 'Tether', baseCurrency: 'ETH' },
+  //     { name: 'EURS', capture: 'Eurs', baseCurrency: 'ETH' },
+  //   ]
+  //   : []),
+  ...(config.erc20matic ? [
+    // { name: 'WBTC', capture: 'WBTC Token', baseCurrency: 'MATIC' },
+    { name: 'Nol', capture: 'Nol', baseCurrency: 'MATIC' },
+  ] : []),
+  // ...(process.env.MAINNET
+  //   ? [{ name: 'SWAP', capture: 'Swap', baseCurrency: 'ETH' }]
+  //   : [{ name: 'WEENUS', capture: 'Weenus', baseCurrency: 'ETH' }]),
+  // ...(config.erc20 ? [{ name: 'ERC20', capture: 'Token', baseCurrency: 'ETH' }] : []),
+  // ...(config.bep20 ? [{ name: 'BEP20', capture: 'Token', baseCurrency: 'BNB' }] : []),
+  // ...(config.erc20matic ? [{ name: 'ERC20MATIC', capture: 'Token', baseCurrency: 'MATIC' }] : []),
+  // ...(config.erc20xdai ? [{ name: 'ERC20XDAI', capture: 'Token', baseCurrency: 'XDAI' }] : []),
+  // ...(config.erc20ftm ? [{ name: 'ERC20FTM', capture: 'Token', baseCurrency: 'FTM' }] : []),
+  // ...(config.erc20avax ? [{ name: 'ERC20AVAX', capture: 'Token', baseCurrency: 'AVAX' }] : []),
+  // ...(config.erc20movr ? [{ name: 'ERC20MOVR', capture: 'Token', baseCurrency: 'MOVR' }] : []),
+  // ...(config.erc20one ? [{ name: 'ERC20ONE', capture: 'Token', baseCurrency: 'ONE' }] : []),
+  // ...(config.erc20ame ? [{ name: 'ERC20AME', capture: 'Token', baseCurrency: 'AME' }] : []),
+  // ...(config.erc20aurora ? [{ name: 'ERC20AURORA', capture: 'Token', baseCurrency: 'AURETH' }] : []),
+  // ...(config.phi20_v1 ? [{ name: 'PHI20_V1', capture: 'Token', baseCurrency: 'PHI_V1' }] : []),
+  // ...(config.phi20 ? [{ name: 'PHI20', capture: 'Token', baseCurrency: 'PHI' }] : []),
+  // ...(config.fkw20 ? [{ name: 'FKW20', capture: 'Token', baseCurrency: 'FKW' }] : []),
+  // ...(config.phpx20 ? [{ name: 'PHPX20', capture: 'Token', baseCurrency: 'PHPX' }] : []),
 ]
 
 export const widgetPack = [

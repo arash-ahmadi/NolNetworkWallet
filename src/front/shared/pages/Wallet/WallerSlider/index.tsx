@@ -193,11 +193,9 @@ class WallerSlider extends React.Component<WallerSliderProps, WallerSliderState>
       />
     )
 
-    return window.location.hash !== linksManager.hashHome ? null : (
-      <div className="data-tut-banners">
-        <h3 className={`${styles.bannersHeading}`}>
-          <FormattedMessage id="ForYou" defaultMessage="For you" />
-        </h3>
+    return (window.location.hash !== linksManager.hashHome) || (mnemonicDeleted) ? null : (
+      
+      <>
         {!this.state.isFetching ? (
           //@ts-ignore
           <ContentLoader banners />
@@ -219,7 +217,7 @@ class WallerSlider extends React.Component<WallerSliderProps, WallerSliderState>
                   />
                 </div>
               )}
-              {!isPrivateKeysSaved && !mnemonicDeleted && !disableInternalWallet && (
+                {(!isPrivateKeysSaved && !mnemonicDeleted && !disableInternalWallet) && (
                 <div className="swiper-slide">
                   <NotifyBlock
                     className="notifyBlockSaveKeys"
@@ -227,15 +225,15 @@ class WallerSlider extends React.Component<WallerSliderProps, WallerSliderState>
                     text={
                       <FormattedMessage
                         id="ShowMyMnemonic_copy"
-                        defaultMessage="Please backup your wallet"
+                        defaultMessage="Backup your wallet"
                       />
                     }
                     feedbackText={`Save mnemonic`}
-                    onPress={mnemonicDeleted ? this.handleShowKeys : this.handleShowMnemonic}
+                    onPress={this.handleShowMnemonic}
                   />
                 </div>
               )}
-              {banners &&
+              {/* {banners &&
                 banners.length > 0 &&
                 banners.map((banner, index) => (
                   <div key={index} className="swiper-slide">
@@ -246,11 +244,11 @@ class WallerSlider extends React.Component<WallerSliderProps, WallerSliderState>
                       link={banner[4]}
                     />
                   </div>
-                ))}
+                ))} */}
             </div>
           </div>
         )}
-      </div>
+      </>
     )
   }
 }

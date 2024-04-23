@@ -18,6 +18,7 @@ export const initialState = {
     phpx: false,
     ghost: false,
     next: false,
+    nol: false,
     '{eth}usdt': false,
     '{eth}swap': false,
   },

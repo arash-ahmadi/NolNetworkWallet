@@ -77,12 +77,20 @@ export const COIN_MODEL = Object.freeze({
 })
 
 export const COIN_DATA = {
-  NOL: {
-    ticker: 'NOL',
-    name: 'Nol Coin',
-    type: COIN_TYPE.MATIC_TOKEN,
+  // NOL: {
+  //   ticker: 'NOL',
+  //   name: 'Nol Coin',
+  //   type: COIN_TYPE.MATIC_TOKEN,
+  //   blockchain: BLOCKCHAIN.MATIC,
+  //   standard: TOKEN_STANDARD.ERC20MATIC,
+  //   model: COIN_MODEL.AB,
+  //   precision: 18,
+  // },
+  MATIC: {
+    ticker: 'MATIC',
+    name: 'MATIC Token',
+    type: COIN_TYPE.NATIVE,
     blockchain: BLOCKCHAIN.MATIC,
-    standard: TOKEN_STANDARD.ERC20MATIC,
     model: COIN_MODEL.AB,
     precision: 18,
   },
@@ -110,14 +118,7 @@ export const COIN_DATA = {
     model: COIN_MODEL.AB,
     precision: 18,
   },
-  MATIC: {
-    ticker: 'MATIC',
-    name: 'MATIC Token',
-    type: COIN_TYPE.NATIVE,
-    blockchain: BLOCKCHAIN.MATIC,
-    model: COIN_MODEL.AB,
-    precision: 18,
-  },
+  
   ARBETH: {
     ticker: 'ARBETH',
     name: 'Arbitrum ETH',
@@ -306,11 +307,11 @@ export const NATIVE = {
 }
 
 export const BNB_TOKENS = {
-  btcb: 'BTCB',
+  // btcb: 'BTCB',
 }
 
 export const MATIC_TOKENS = {
-  wbtc: 'WBTC',
+  // wbtc: 'WBTC',
   nol: 'NOL',
 }
 

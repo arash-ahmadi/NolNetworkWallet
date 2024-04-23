@@ -64,7 +64,6 @@ const tokenPartialItems: IUniversalObj[] = []
 EXISTING_STANDARDS.forEach((standard) => {
   const { currency } = TOKEN_STANDARDS[standard]
   const tokenNames = Object.keys(config[standard])
-  debugger
   tokenNames.forEach((name) => {
     tokenItems.push({
       name: name.toUpperCase(),
@@ -377,6 +376,7 @@ const initialState = {
     ...(!buildOpts.blockchainSwapEnabled || buildOpts.blockchainSwapEnabled.ghost) ? [baseCurrencyConfig.GHOST] : [],
     ...(!buildOpts.blockchainSwapEnabled || buildOpts.blockchainSwapEnabled.next) ? [baseCurrencyConfig.NEXT] : [],
     ...(!buildOpts.blockchainSwapEnabled || buildOpts.blockchainSwapEnabled.btc) ? [baseCurrencyConfig.BTC] : [],
+    ...(!buildOpts.blockchainSwapEnabled || buildOpts.blockchainSwapEnabled.nol) ? [baseCurrencyConfig.NOL] : [],
     ...tokenPartialItems,
   ],
   addSelectedItems: [],
@@ -403,6 +403,7 @@ if (config.isWidget) {
     ...(!buildOpts.curEnabled || buildOpts.curEnabled.btc) ? [baseCurrencyConfig.BTC] : [],
     ...(!buildOpts.curEnabled || buildOpts.curEnabled.ghost) ? [baseCurrencyConfig.GHOST] : [],
     ...(!buildOpts.curEnabled || buildOpts.curEnabled.next) ? [baseCurrencyConfig.NEXT] : [],
+    ...(!buildOpts.curEnabled || buildOpts.curEnabled.nol) ? [baseCurrencyConfig.NOL] : [],
   ]
   // leave only coins
   initialState.partialItems = initialState.partialItems.filter((item) => !item.standard)

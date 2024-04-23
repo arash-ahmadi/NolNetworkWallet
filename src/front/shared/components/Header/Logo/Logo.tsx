@@ -11,7 +11,7 @@ import ThemeTooltip from '../../ui/Tooltip/ThemeTooltip'
 
 import logoBlack from 'shared/images/logo/logo-black.svg'
 import logoColored from 'shared/images/logo/logo-colored.svg'
-
+import nolLogo from 'shared/images/logo/nol-logo.png'
 
 /* uncomment to debug */
 //window.logoUrl = 'https://wallet.wpmix.net/wp-content/uploads/2020/07/yourlogohere.png'
@@ -58,12 +58,12 @@ class Logo extends Component<any, {}> {
       <div styleName="logoWrapper">
         {isCustomLogoLink ?
           <a href={goToUrl}>
-            <img src={imgSrc} alt={imgAlt} />
+            <img src={nolLogo} alt={nolLogo} />
           </a>
           :
           <Fragment>
             <Link to={goToUrl} data-tip data-for="logo">
-              <img src={imgSrc} alt={imgAlt} />
+              <img src={nolLogo} alt={nolLogo} />
             </Link>
             <ThemeTooltip id="logo" effect="solid" place="bottom">
               <FormattedMessage id="logo29" defaultMessage="Go Home" />
