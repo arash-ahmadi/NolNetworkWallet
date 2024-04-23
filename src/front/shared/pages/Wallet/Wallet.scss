@@ -162,6 +162,7 @@
     text-transform: uppercase;
     margin: 0 10px;
     font-size: 13px;
+    color: black;
   }
 
   button.active {
@@ -173,6 +174,7 @@
   .yourBalanceBottom {
     button {
       width: 30%;
+      color: black;
     }
   }
 }
@@ -203,6 +205,7 @@
 
       button {
         width: 48%;
+        color: black;
       }
 
       button[id='exchangeBtn'] {
@@ -289,6 +292,7 @@
 
     button {
       width: 100%;
+      color: black;
 
       &:nth-child(1),
       &:nth-child(2) {

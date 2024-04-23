@@ -50,6 +50,7 @@
     button {
       @include ff-light;
       letter-spacing: 0.05rem;
+      color: black;
     }
 
     .devVersionLink {
@@ -92,6 +93,7 @@
         margin: 1.5em auto 0;
         min-width: 100px;
         display: block;
+        color: black;
       }
     }
   }

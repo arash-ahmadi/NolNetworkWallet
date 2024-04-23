@@ -17,6 +17,7 @@
   right: 20px;
   position: absolute;
   top: 15px;
+  color: black;
   z-index: 9999;
 
   div {
@@ -93,6 +94,7 @@
   background: var(--color-brand);
   color: var(--color-f-brightest);
   height: 45px;
+  color: black;
   width: 100%;
 }
 
@@ -151,6 +153,7 @@
     font-size: 14px;
     text-decoration: underline;
     padding: 0;
+    color: black;
   }
 }
 
@@ -277,6 +280,7 @@
     bottom: 0;
     height: 65px;
     z-index: 1111111;
+    color: black;
   }
 
   .wrapper {
@@ -358,6 +362,7 @@
       font-size: 14px;
       text-decoration: underline;
       margin-bottom: 8px;
+      color: black;
     }
   }
 

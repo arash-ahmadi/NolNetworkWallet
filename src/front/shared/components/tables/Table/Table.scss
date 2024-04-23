@@ -273,6 +273,7 @@ table.wallet {
           margin-bottom: 10px;
           margin-right: 0;
           width: 125px;
+          color: black;
         }
       }
     }
@@ -310,11 +311,13 @@ table.wallet {
           width: auto;
           padding: 0 15px;
           margin-right: 5px;
+          color: black;
           font-size: 13px;
         }
 
         button {
           width: 33.3%;
+          color: black;
           flex-basis: 50%;
         }
 
@@ -469,11 +472,13 @@ table.wallet {
           padding: 0 15px;
           margin-right: 5px;
           font-size: 13px;
+          color: black;
         }
 
         button {
           width: 33.3%;
           flex-basis: 50%;
+          color: black;
         }
 
         button:last-child {

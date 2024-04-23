@@ -110,14 +110,15 @@
 
 .button {
   height: 48px;
+  color: black;
 
   &_sms {
     flex: 1 140px;
   }
 
   &:hover {
-    color: #7c1de9;
-    background: #dfc5ff;
+    color: black;
+    background: #a3a3a3;
   }
 }
 
@@ -148,6 +149,7 @@
 @include media-mobile {
   .button {
     height: 100%;
+    color: black;
   }
 
   .mobileFont {

@@ -30,6 +30,7 @@
   padding-top: 20px;
   button {
     display: block;
+    color: black;
     max-width: 200px;
     width: 100%;
     margin: 0 auto;
@@ -89,12 +90,14 @@
   .payControl {
     button {
       width: 100%;
+      color: black;
     }
   }
 
   .closeButton,
   .shareButton {
     width: 49%;
+    color: black;
     padding: 0px;
     margin-top: 1rem;
   }
@@ -102,6 +105,8 @@
   .closeButton {
     button {
       width: 100%;
+      color: black;
+      
     }
     &::before {
       content: '';
@@ -118,6 +123,7 @@
   &.without-share-button {
     .closeButton {
       margin: 1rem auto;
+      color: black;
     }
   }
   &.without-pay-control {
@@ -164,6 +170,7 @@
   .share-ready-holder {
     button {
       max-width: none;
+      color: black;
     }
   }
 
