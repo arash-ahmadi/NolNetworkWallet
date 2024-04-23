@@ -75,7 +75,7 @@ function CurrenciesList(props: CurrenciesListProps) {
               />
             )}
           />
-          <div styleName="addCurrencyBtnWrapper">
+          {/* <div styleName="addCurrencyBtnWrapper">
             <Button id="addCustomTokenBtn" onClick={openAddCustomTokenModal} transparent fullWidth>
               <FormattedMessage id="addCustomToken" defaultMessage="Add custom token" />
             </Button>
@@ -106,7 +106,7 @@ function CurrenciesList(props: CurrenciesListProps) {
                 <FormattedMessage id="addAsset" defaultMessage="Add currency" />
               </Button>
             )}
-          </div>
+          </div> */}
         </>
       )}
       {!showAssets && !metamask.isConnected() && (

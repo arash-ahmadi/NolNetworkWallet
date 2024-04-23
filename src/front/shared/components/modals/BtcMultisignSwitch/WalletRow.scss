@@ -61,13 +61,13 @@
     line-height: 40px;
     font-size: 16px;
     font-weight: 500;
-    color: #7c1de9;
+    color: black;
     border-radius: 20px;
     margin-right: 10px;
   
     &:hover {
-      color: #7c1de9;
-      background: #dfc5ff;
+      color: black;
+      background: #a3a3a3;
     }
   }
 
@@ -180,7 +180,7 @@
   
   .actButton {
     button {
-      color: #ffffff;
+      color: black;
       width: auto;
       background: rgba(61, 226, 91, 0.7);
       height: 25px;
@@ -193,7 +193,7 @@
       margin-right: 10px;
       height: 40px;
       &:hover {
-        color: #ffffff;
+        color: black;
         background: rgba(61, 226, 91, 0.8);
       }
     }

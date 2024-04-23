@@ -44,6 +44,7 @@
   display: block;
   width: auto;
   max-width: 240px;
+  color: black;
 }
 
 .header {
@@ -128,6 +129,7 @@
     max-width: none;
     min-width: 180px;
     margin: 0 auto;
+    color: black;
 
     img {
       height: 2rem;
@@ -176,6 +178,7 @@
 
     button {
       width: 80%;
+      color: black;
     }
   }
 }

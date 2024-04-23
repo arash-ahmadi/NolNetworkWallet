@@ -19,6 +19,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  color: 'black'
 }
 
 .yourAssets {
@@ -129,6 +130,7 @@
   button {
     width: 48%;
     z-index: 1;
+    color: black;
   }
 
   button.button__invoice {

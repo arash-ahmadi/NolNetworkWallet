@@ -28,6 +28,7 @@
   height: 20px;
   opacity: 0.5;
   transition: opacity .33s $ease-out-quadratic;
+  color: black;
 
   &:hover {
     opacity: 1;
@@ -70,6 +71,7 @@
 .button {
   width: 45%;
   max-width: 240px;
+  color: black;
 }
 
 .content {
