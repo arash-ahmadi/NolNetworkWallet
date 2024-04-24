@@ -113,6 +113,7 @@ class Header extends Component<any, any> {
   }
 
   componentDidMount() {
+    localStorage.setItem(constants.localStorage.isDark, 'true');
     this.handlerAsync()
 
     // Temporarily
@@ -351,6 +352,7 @@ class Header extends Component<any, any> {
     localStorage.setItem(wasOnExchange, 'true')
   }
 
+  
   handleToggleTheme = () => {
     this.setState(() => ({ themeSwapAnimation: true }))
 
@@ -412,7 +414,9 @@ class Header extends Component<any, any> {
     wpLogoutModal(this.handleLogout, intl)
   }
 
+  
   render() {
+    
     const {
       isTourOpen,
       isPartialTourOpen,
@@ -450,11 +454,7 @@ class Header extends Component<any, any> {
           {!config.isExtension && Object.values(config.enabledEvmNetworks).length ? (
             <WalletConnect />
           ) : null}
-
-          {window.WPSO_selected_theme !== 'only_light' && window.WPSO_selected_theme !== 'only_dark' && (
-            <ThemeSwitcher onClick={this.handleToggleTheme} />
-          )}
-
+          
           {isLogoutPossible && ( // some wordpress plugin cases
             <div styleName="logoutWrapper" onClick={this.handleLogout}>
               <i className="fas fa-sign-out-alt" />

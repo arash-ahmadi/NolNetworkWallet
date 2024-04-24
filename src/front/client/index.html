@@ -602,7 +602,8 @@
     <script>
       const isDark = localStorage.getItem('isDark')
       const isLight = localStorage.getItem('isLight')
-      const isSystemDark = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      localStorage.setItem('isDark', 'true')
+      //const isSystemDark = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
       const dataset = document.body.dataset
 
       if (!isDark && !isLight && isSystemDark) {
