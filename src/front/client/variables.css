@@ -34,13 +34,13 @@
 }
 
 [data-scheme="dark"] {
-  --color-brand:#ffffff;
+  --color-brand:#48cefd;
   --color-brand-hover: #a3a3a3;
   --color-brand-background: #6144e51a;
   --color-page-background: #222427;
   --color: #fff;
-  --color-background: #222427;
-  --color-background-elements: #242425;
+  --color-background: #3f1839;
+  --color-background-elements: #3f1839;
   --color-read-only: rgb(44, 44, 44);
   --color-need-to-rename: #1F2D48;
   --color-inactive: #3c3c3c;

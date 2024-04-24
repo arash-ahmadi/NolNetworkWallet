@@ -138,7 +138,12 @@
     line-height: inherit;
     padding: 0 9px;
     font-size: 14px;
-    color: black;
+    // color: #fff;
+  }
+  .empty {
+    border: 1px solid var(--color-brand);
+    background-color: transparent;
+    color: var(--color-brand);
   }
   .small {
     font-size: 0.8rem;

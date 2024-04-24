@@ -220,16 +220,21 @@ class InvoicesList extends PureComponent<any, any> {
     if (isRedirecting) return null
 
     const invoicesTable = (
-      <div styleName="currencyWalletActivity">
-        <h3>
-          <FormattedMessage id="InvoicesList_Title" defaultMessage="Invoices" />
-        </h3>
-        {(items && items.length > 0) ? (
-          <Table rows={items} styleName="currencyHistory" rowRender={this.rowRender} />
-        ) : (
-          <ContentLoader rideSideContent empty inner />
-        )}
-      </div>
+      <Fragment>
+        <section styleName="history">
+          {/* <div styleName="currencyWalletActivity"> */}
+            <h3>
+              <FormattedMessage id="InvoicesList_Title" defaultMessage="Invoices" />
+            </h3>
+            {(items && items.length > 0) ? (
+              <Table rows={items} styleName="currencyHistory" rowRender={this.rowRender} />
+            ) : (
+              <ContentLoader rideSideContent empty inner />
+            )}
+          {/* </div> */}
+        </section>
+      </Fragment>
+      
     )
 
     if (onlyTable) {
@@ -237,38 +242,43 @@ class InvoicesList extends PureComponent<any, any> {
     }
 
     return (
-      <div styleName="root">
-        {isWidgetBuild && !config.isFullBuild && (
-          <ul styleName="widgetNav">
-            <li styleName="widgetNavItem" onClick={this.handleGoWalletHome}>
-              <a href="#" styleName="widgetNavItemLink">
-                <FormattedMessage id="MybalanceswalletNav" defaultMessage="Мои кошельки" />
-              </a>
-            </li>
-            <li styleName="widgetNavItem active">
-              <a href="#" styleName="widgetNavItemLink">
-                <FormattedMessage id="InvoicesList_Title" defaultMessage="Invoices" />
-              </a>
-            </li>
-          </ul>
-        )}
-        <Fragment>
-          <div styleName="currencyWalletWrapper">
-            <div styleName="currencyWalletBalance">
-              {(items && items.length > 0) ? (
-                <div>
-                  {/* Right form holder */}
+      <Fragment>
+        <section styleName="history">
+          <div styleName="root">
+            {isWidgetBuild && !config.isFullBuild && (
+              <ul styleName="widgetNav">
+                <li styleName="widgetNavItem" onClick={this.handleGoWalletHome}>
+                  <a href="#" styleName="widgetNavItemLink">
+                    <FormattedMessage id="MybalanceswalletNav" defaultMessage="Мои кошельки" />
+                  </a>
+                </li>
+                <li styleName="widgetNavItem active">
+                  <a href="#" styleName="widgetNavItemLink">
+                    <FormattedMessage id="InvoicesList_Title" defaultMessage="Invoices" />
+                  </a>
+                </li>
+              </ul>
+            )}
+            <Fragment>
+              <div styleName="currencyWalletWrapper">
+                <div styleName="currencyWalletBalance">
+                  {(items && items.length > 0) ? (
+                    <div>
+                      {/* Right form holder */}
+                    </div>
+                  ) : (
+                    <ContentLoader leftSideContent />
+                  )}
                 </div>
-              ) : (
-                <ContentLoader leftSideContent />
-              )}
-            </div>
-            <div styleName="currencyWalletActivity">
-              {invoicesTable}
-            </div>
+                <div styleName="currencyWalletActivity">
+                  {invoicesTable}
+                </div>
+              </div>
+            </Fragment>
           </div>
-        </Fragment>
-      </div>
+        </section>
+      </Fragment>
+      
     )
   }
 }

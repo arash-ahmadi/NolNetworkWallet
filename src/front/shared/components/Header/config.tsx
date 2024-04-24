@@ -85,20 +85,20 @@ export const getMenuItems = (props) => {
   ]
 
   // Marketmaker pages ********
-  if (!isWidgetBuild) {
-    const marketmakerItem = {
-      title: intl.formatMessage(messages.marketmaker),
-      link: (externalConfig.opts.ui.farmLink)
-        ? externalConfig.opts.ui.farmLink
-        : !isChromeExtension ? `${links.marketmaker}/` : `${links.marketmaker}/{MATIC}WBTC`,
-      exact: true,
-      currentPageFlag: true,
-      isExternal: (externalConfig.opts.ui.farmLink) ? true : false
-    }
+  // if (!isWidgetBuild) {
+  //   const marketmakerItem = {
+  //     title: intl.formatMessage(messages.marketmaker),
+  //     link: (externalConfig.opts.ui.farmLink)
+  //       ? externalConfig.opts.ui.farmLink
+  //       : !isChromeExtension ? `${links.marketmaker}/` : `${links.marketmaker}/{MATIC}WBTC`,
+  //     exact: true,
+  //     currentPageFlag: true,
+  //     isExternal: (externalConfig.opts.ui.farmLink) ? true : false
+  //   }
 
-    itemsWithWallet.push(marketmakerItem)
-    itemsWithoutWallet.push(marketmakerItem)
-  }
+  //   itemsWithWallet.push(marketmakerItem)
+  //   itemsWithoutWallet.push(marketmakerItem)
+  // }
 
   if (onlyEvmWallets && metamask.isConnected()) return itemsWithWallet
 
