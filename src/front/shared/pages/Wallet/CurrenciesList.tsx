@@ -75,10 +75,10 @@ function CurrenciesList(props: CurrenciesListProps) {
               />
             )}
           />
-          {/* <div styleName="addCurrencyBtnWrapper">
-            <Button id="addCustomTokenBtn" onClick={openAddCustomTokenModal} transparent fullWidth>
+          <div styleName="addCurrencyBtnWrapper">
+            {/* <Button id="addCustomTokenBtn" onClick={openAddCustomTokenModal} transparent fullWidth>
               <FormattedMessage id="addCustomToken" defaultMessage="Add custom token" />
-            </Button>
+            </Button> */}
             {addAllEnabledWalletsAfterRestoreOrCreateSeedPhrase && !noInternalWallet && (
               <Button onClick={handleRestoreMnemonic} small link>
                 <FormattedMessage id="ImportKeys_RestoreMnemonic" defaultMessage="Restore from 12-word seed" />
@@ -106,7 +106,7 @@ function CurrenciesList(props: CurrenciesListProps) {
                 <FormattedMessage id="addAsset" defaultMessage="Add currency" />
               </Button>
             )}
-          </div> */}
+          </div> 
         </>
       )}
       {!showAssets && !metamask.isConnected() && (
