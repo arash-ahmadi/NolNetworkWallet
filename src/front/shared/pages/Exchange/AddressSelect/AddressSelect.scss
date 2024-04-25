@@ -84,7 +84,7 @@
       width: 100px;
       font-size: 0.8rem;
       padding: unset;
-      color: black;
+      color: var(--color-f-brightest);
     }
   }
 }
@@ -133,7 +133,7 @@
   font-size: 15px;
   flex-basis: 100%;
   box-shadow: none;
-  color: black;
+  color: var(--color-f-brightest);
 
   @include media-mobile {
     font-size: 11px;

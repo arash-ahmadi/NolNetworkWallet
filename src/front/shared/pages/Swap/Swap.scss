@@ -235,7 +235,7 @@
   }
   button {
     width: 100%;
-    color: black;
+    color: var(--color-f-brightest);
     margin: 0 1em;
     height: 56px;
     display: flex;
@@ -265,7 +265,7 @@
     }
     button {
       display: none;
-      color: black;
+      color: var(--color-f-brightest);
     }
   }
 }
@@ -303,7 +303,7 @@
 
 .button {
   margin-top: 20px;
-  color: black;
+  color: var(--color-f-brightest);
   font-size: 14px;
 }
 

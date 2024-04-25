@@ -11,7 +11,8 @@ import config from 'helpers/externalConfig'
 import metamask from 'helpers/metamask'
 import { FormattedMessage } from 'react-intl'
 import dollar from './images/dollar.svg'
-import btc from './images/btcIcon.svg'
+import nol from './images/nol.png'
+import styles2 from './BalanceForm.scss'
 
 const BalanceForm = function ({
   activeFiat,
@@ -88,7 +89,7 @@ const BalanceForm = function ({
           {selectedCurrency === active ? (
             // eslint-disable-next-line no-restricted-globals
             <p>
-              {(activeFiat === 'USD' || activeFiat === 'CAD') && <img src={dollar} alt="dollar" />}
+              {(activeFiat === 'USD' || activeFiat === 'CAD') && <img src={dollar} alt="dollar" className={styles2.imgusd} />}
               {
                 // eslint-disable-next-line no-restricted-globals
                 !isNaN(fiatBalance) ? new BigNumber(fiatBalance).dp(2, BigNumber.ROUND_FLOOR).toString() : ''
@@ -96,7 +97,7 @@ const BalanceForm = function ({
             </p>
           ) : (
             <p className="data-tut-all-balance">
-              {currency.toUpperCase() === 'BTC' ? <img src={btc} alt="btc" /> : ''}
+                {currency.toUpperCase() === 'BTC' ? <img src={nol} alt="nol" className={styles2.imgnol}/> : ''}
               {new BigNumber(currencyBalance).dp(6, BigNumber.ROUND_FLOOR).toString()}
             </p>
           )}
@@ -115,7 +116,8 @@ const BalanceForm = function ({
             styleName={selectedCurrency === currency ? 'active' : undefined}
             onClick={() => handleClickCurrency(currency)}
           >
-            {currencyView || currency}
+            {/*currencyView || currency*/}
+            NOL
           </button>
         </div>
       </div>

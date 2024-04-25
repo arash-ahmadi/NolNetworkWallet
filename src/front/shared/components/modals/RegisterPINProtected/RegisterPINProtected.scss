@@ -19,7 +19,7 @@
   margin-top: 20px;
   button {
     width: 45%;
-    color: black;
+    color: var(--color-f-brightest);
   }
 }
 
@@ -71,11 +71,11 @@
   padding-bottom: 10px;
   button {
     width: 30%;
-    color: black;
+    color: var(--color-f-brightest);
   }
   &_2_buttons button {
     width: 45%;
-    color: black;
+    color: var(--color-f-brightest);
   }
 }
 .buttonContainer {

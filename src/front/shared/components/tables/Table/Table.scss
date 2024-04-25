@@ -273,7 +273,7 @@ table.wallet {
           margin-bottom: 10px;
           margin-right: 0;
           width: 125px;
-          color: black;
+          color: var(--color-f-brightest);
         }
       }
     }
@@ -311,13 +311,13 @@ table.wallet {
           width: auto;
           padding: 0 15px;
           margin-right: 5px;
-          color: black;
+          color: var(--color-f-brightest);
           font-size: 13px;
         }
 
         button {
           width: 33.3%;
-          color: black;
+          color: var(--color-f-brightest);
           flex-basis: 50%;
         }
 
@@ -472,13 +472,13 @@ table.wallet {
           padding: 0 15px;
           margin-right: 5px;
           font-size: 13px;
-          color: black;
+          color: var(--color-f-brightest);
         }
 
         button {
           width: 33.3%;
           flex-basis: 50%;
-          color: black;
+          color: var(--color-f-brightest);
         }
 
         button:last-child {

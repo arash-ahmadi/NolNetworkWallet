@@ -110,14 +110,14 @@
 
 .button {
   height: 48px;
-  color: black;
+  color: var(--color-f-brightest);
 
   &_sms {
     flex: 1 140px;
   }
 
   &:hover {
-    color: black;
+    color: var(--color-f-brightest);
     background: #a3a3a3;
   }
 }
@@ -149,7 +149,7 @@
 @include media-mobile {
   .button {
     height: 100%;
-    color: black;
+    color: var(--color-f-brightest);
   }
 
   .mobileFont {

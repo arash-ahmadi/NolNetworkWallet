@@ -61,7 +61,7 @@
   .notifyBlock {
     button {
       font-size: 11px;
-      color: black;
+      color: var(--color-f-brightest);
     }
   }
 
@@ -95,7 +95,7 @@
       button {
         font-size: 12px;
         margin: 0;
-        color: black;
+        color: var(--color-f-brightest);
       }
 
 
@@ -165,7 +165,7 @@
         font-size: 12px;
         margin: 0;
         flex-basis: 100%;
-        color: black;
+        color: var(--color-f-brightest);
       }
 
       button:first-child {

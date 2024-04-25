@@ -50,7 +50,7 @@
     button {
       @include ff-light;
       letter-spacing: 0.05rem;
-      color: black;
+      color: var(--color-f-brightest);
     }
 
     .devVersionLink {

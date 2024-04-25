@@ -10,13 +10,13 @@
   display: block;
   padding: 0 20px;
   margin: 0px auto;
-  color: black;
+  color: var(--color-f-brightest);
 }
 
 .buttonsContainer {
   display: flex;
   flex-flow: row wrap;
-  color: black;
+  color: var(--color-f-brightest);
 }
 
 @include media-mobile {
@@ -30,7 +30,7 @@
     width: 100%;
     padding: 0;
     margin: 7px auto;
-    color: black;
+    color: var(--color-f-brightest);
   }
 
 }

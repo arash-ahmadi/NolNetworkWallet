@@ -14,7 +14,7 @@
 .button {
   width: 200px;
   padding: 0;
-  color: black;
+  color: var(--color-f-brightest);
 }
 
 .link {
@@ -31,6 +31,6 @@
   }
   .button {
     width: 160px;
-    color: black;
+    color: var(--color-f-brightest);
   }
 }

@@ -12,7 +12,7 @@
   border: none;
   border-radius: var(--button-border-radius);
   transition: background 0.23s ease, color 0.23s ease;
-  color: black;
+  color: var(--color-f-brightest);
 
   .pending {
     cursor: wait;

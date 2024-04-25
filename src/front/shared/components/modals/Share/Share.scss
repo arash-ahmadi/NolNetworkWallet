@@ -21,7 +21,7 @@
 
 .button {
   display: inline-flex;
-  color: black;
+  color: var(--color-f-brightest);
   align-items: center;
   justify-content: center;
   height: auto;
@@ -58,7 +58,7 @@
   button {
     width: 50%;
     display: block;
-    color: black;
+    color: var(--color-f-brightest);
     margin: 0 auto;
   }
 }
@@ -100,7 +100,7 @@
   .copyButtonHolder {
     button {
       width: 100%;
-      color: black;
+      color: var(--color-f-brightest);
     }
   }
 }
